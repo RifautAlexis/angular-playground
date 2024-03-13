@@ -8,15 +8,15 @@ import { Component, signal } from '@angular/core';
 export class BasicSignalsCounterComponent {
   counter = signal<number>(0);
 
-  increment() {
+  increment(): void {
     this.counter.update((currentCounterValue) => currentCounterValue + 1);
   }
 
-  decrement() {
+  decrement(): void {
     this.counter.update((currentCounterValue) => currentCounterValue - 1);
   }
 
-  setValue(inputValue: any) {
+  setValue(inputValue: any): void {
     this.counter.set(inputValue.target?.value);
   }
 }
