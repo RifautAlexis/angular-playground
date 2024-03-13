@@ -1,4 +1,5 @@
 <h1>Counter :</h1>
-<p>{{counter()}}</p>
+<p>{{ counter() }}</p>
 <button (click)="increment()">Add</button>
 <button (click)="decrement()">Substract</button>
+<input type="number" (change)="setValue($event)" />
