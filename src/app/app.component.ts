@@ -13,8 +13,12 @@ import { MatListModule } from '@angular/material/list';
 export class AppComponent {
   routes: { name: string; url: string }[] = [
     {
-      name: 'Basic Counter',
-      url: 'basic-counter',
+      name: 'Basic Example',
+      url: 'basic',
+    },
+    {
+      name: 'Complete Example',
+      url: 'complete',
     },
   ];
 }
