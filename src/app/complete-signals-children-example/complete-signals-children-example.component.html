@@ -1,0 +1,14 @@
+<h1>Results of the sporting season</h1>
+
+<app-stats-with-signals
+  [nbMatch]="nbMatch()"
+  [nbWins]="nbWins()"
+  [nbLosses]="nbLosses()"
+  [nbDraws]="nbDraws()"
+></app-stats-with-signals>
+
+<app-table-with-signals
+  [dataTable]="sportingSeason()"
+  (addMatch)="addMatch($event)"
+  (removeMatch)="removeMatch($event)"
+></app-table-with-signals>

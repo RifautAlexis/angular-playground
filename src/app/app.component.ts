@@ -20,5 +20,9 @@ export class AppComponent {
       name: 'Complete Example',
       url: 'complete',
     },
+    {
+      name: 'Complete Example With Children',
+      url: 'complete-with-children',
+    },
   ];
 }

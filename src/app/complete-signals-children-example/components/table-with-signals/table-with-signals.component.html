@@ -1,0 +1,27 @@
+<button (click)="addMatchClicked(MatchStatus.Win)">Add a Win</button>
+<button (click)="removeMatchClicked(MatchStatus.Win)">Remove the last Win</button>
+
+<button (click)="addMatchClicked(MatchStatus.Loss)">Add a Loss</button>
+<button (click)="removeMatchClicked(MatchStatus.Loss)">Remove the last Loss</button>
+
+<button (click)="addMatchClicked(MatchStatus.Draw)">Add a Draw</button>
+<button (click)="removeMatchClicked(MatchStatus.Draw)">Remove the last Draw</button>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Goal Scored</th>
+      <th scope="col">Goal Conceded</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (match of dataTable().matches; track $index) {
+    <tr>
+      <th scope="row">{{ match.goalScored }}</th>
+      <td>{{ match.goalConceded }}</td>
+      <td>{{ match.status }}</td>
+    </tr>
+    }
+  </tbody>
+</table>

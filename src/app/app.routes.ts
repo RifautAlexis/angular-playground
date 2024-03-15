@@ -17,4 +17,12 @@ export const routes: Routes = [
         './complete-signals-example/complete-signals-example.component'
       ).then((comp) => comp.CompleteSignalsExampleComponent),
   },
+  {
+    path: 'complete-with-children',
+    title: 'Complete Example With Children',
+    loadComponent: () =>
+      import(
+        './complete-signals-children-example/complete-signals-children-example.component'
+      ).then((comp) => comp.CompleteSignalsChildrenExampleComponent),
+  },
 ];

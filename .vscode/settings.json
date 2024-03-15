@@ -6,7 +6,8 @@
         },
         "angular-*": {
             "externalTemplate": true,
-            "skipStyle": true
+            "skipStyle": true,
+            "stylesArray": true
         }
     }
 }
